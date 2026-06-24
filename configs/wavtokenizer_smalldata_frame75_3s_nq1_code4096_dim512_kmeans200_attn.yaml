@@ -33,8 +33,8 @@ model:
     evaluate_periodicty: true
 
     resume: false
-    resume_config: ./WavTokenizer/configs/wavtokenizer_smalldata_frame75_3s_nq1_code16384_dim512_kmeans800_attn.yaml
-    resume_model: ./WavTokenizer/result/train/wavtokenizer_smalldata_frame75_3s_nq1_code16384_dim512_kmeans800_attn/xxx.ckpt
+    resume_config: ./configs/wavtokenizer_smalldata_frame75_3s_nq1_code16384_dim512_kmeans800_attn.yaml
+    resume_model: /apdcephfs_qy3/share_301069248/users/yougenyuan/tools/huggingface/WavTokenizer/WavTokenizer_small_320_24k_4096.ckpt
 
     feature_extractor:
       class_path: decoder.feature_extractors.EncodecFeatures
