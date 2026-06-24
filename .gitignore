@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# local test scripts
+test.py
+test_codec.py
+
+# training outputs / checkpoints
+result/
+*.ckpt
