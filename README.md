@@ -11,9 +11,24 @@ SOTA Discrete Codec Models With Forty Tokens Per Second for Audio Language Model
 
 ### 🎉🎉 with WavTokenizer, you can represent speech, music, and audio with only 40 tokens per second!
 ### 🎉🎉 with WavTokenizer, You can get strong reconstruction results.
-### 🎉🎉 WavTokenizer owns rich semantic information and is build for audio language models such as GPT4-o.
+### 🎉🎉 WavTokenizer owns rich semantic information and is build for audio language models such as GPT-4o.
+
+<!--
+# Tips
+We have noticed that several works (approximately exceed ten recent months) have incorrectly cited WavTokenizer. Below is the correct citation format. We sincerely appreciate the community's attention and interest.
+```
+@article{ji2024wavtokenizer,
+  title={Wavtokenizer: an efficient acoustic discrete codec tokenizer for audio language modeling},
+  author={Ji, Shengpeng and Jiang, Ziyue and Wang, Wen and Chen, Yifu and Fang, Minghui and Zuo, Jialong and Yang, Qian and Cheng, Xize and Wang, Zehan and Li, Ruiqi and others},
+  journal={arXiv preprint arXiv:2408.16532},
+  year={2024}
+}
+```
+-->
 
 # 🔥 News
+- *2025.02.25*: We update WavTokenizer camera ready version for ICLR 2025 and update WavTokenizer-large-v2 checkpoint on [huggingface](https://huggingface.co/novateur/WavTokenizer-large-speech-75token). 
+- *2024.10.22*: We update WavTokenizer on arxiv and release WavTokenizer-Large checkpoint.
 - *2024.09.09*: We release WavTokenizer-medium checkpoint on [huggingface](https://huggingface.co/collections/novateur/wavtokenizer-medium-large-66de94b6fd7d68a2933e4fc0).
 - *2024.08.31*: We release WavTokenizer on arxiv.
 
@@ -103,10 +118,9 @@ audio_out = wavtokenizer.decode(features, bandwidth_id=bandwidth_id)
 |:--------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------:|:---------:|:----------:|:------:|
 | WavTokenizer-small-600-24k-4096             |             [🤗](https://huggingface.co/novateur/WavTokenizer/blob/main/WavTokenizer_small_600_24k_4096.ckpt)    | LibriTTS  | 40  |  Speech  | √ |
 | WavTokenizer-small-320-24k-4096             |             [🤗](https://huggingface.co/novateur/WavTokenizer/blob/main/WavTokenizer_small_320_24k_4096.ckpt)     | LibriTTS  | 75 |  Speech  | √|
-| WavTokenizer-medium-600-24k-4096               |               [🤗](https://github.com/jishengpeng/wavtokenizer)         | 10000 Hours | 40  |  Speech, Audio, Music  | Coming Soon|
 | WavTokenizer-medium-320-24k-4096                 |               [🤗](https://huggingface.co/collections/novateur/wavtokenizer-medium-large-66de94b6fd7d68a2933e4fc0)         | 10000 Hours | 75 |  Speech, Audio, Music  | √ |
-| WavTokenizer-large-600-24k-4096 | [🤗](https://github.com/jishengpeng/wavtokenizer) | 80000 Hours | 40 |   Speech, Audio, Music   | Coming Soon|
-| WavTokenizer-large-320-24k-4096   | [🤗](https://github.com/jishengpeng/wavtokenizer) | 80000 Hours | 75 |   Speech, Audio, Music   | Coming Soon |
+| WavTokenizer-large-600-24k-4096 | [🤗](https://huggingface.co/novateur/WavTokenizer-large-unify-40token) | 80000 Hours | 40 |   Speech, Audio, Music   | √|
+| WavTokenizer-large-320-24k-4096   | [🤗](https://huggingface.co/novateur/WavTokenizer-large-speech-75token) | 80000 Hours | 75 |   Speech, Audio, Music   | √ |
 
       
 
@@ -139,8 +153,8 @@ If this code contributes to your research, please cite our work, Language-Codec 
 
 ```
 @article{ji2024wavtokenizer,
-  title={WavTokenizer: an Efficient Acoustic Discrete Codec Tokenizer for Audio Language Modeling},
-  author={Ji, Shengpeng and Jiang, Ziyue and Cheng, Xize and Chen, Yifu and Fang, Minghui and Zuo, Jialong and Yang, Qian and Li, Ruiqi and Zhang, Ziang and Yang, Xiaoda and others},
+  title={Wavtokenizer: an efficient acoustic discrete codec tokenizer for audio language modeling},
+  author={Ji, Shengpeng and Jiang, Ziyue and Wang, Wen and Chen, Yifu and Fang, Minghui and Zuo, Jialong and Yang, Qian and Cheng, Xize and Wang, Zehan and Li, Ruiqi and others},
   journal={arXiv preprint arXiv:2408.16532},
   year={2024}
 }
